@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery - M&J Fitness Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+    <nav>
+      <ul class="navbar-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="classes.html">Classes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <div class="product">
+        <img src="placeholder.jpg" alt="Workout 1"/>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </section>
+
+    <div>
+      <button onclick="viewCart()">View Cart</button>
+      <button onclick="clearCart()">Clear Cart</button>
+      <button onclick="processOrder()">Process Order</button>
+    </div>
+  </main>
+</body>
+</html>
