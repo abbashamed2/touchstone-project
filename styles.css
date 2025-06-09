@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 1em;
+}
+
+header {
+  background-color: #3b3b98;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav {
+  background-color: #218c74;
+  padding: 0.5em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #3b3b98;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+button {
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  background-color: #e55039;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b71540;
+}
