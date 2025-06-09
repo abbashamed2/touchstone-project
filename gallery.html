@@ -2,36 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery - M&J Fitness Studio</title>
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <h1>Gallery</h1>
-    <nav>
-      <ul class="navbar-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="classes.html">Classes</a></li>
-      </ul>
-    </nav>
   </header>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="classes.html">Classes</a>
+    <a href="about.html">About Us</a>
+  </nav>
   <main>
-    <section class="gallery">
-      <div class="product">
-        <img src="placeholder.jpg" alt="Workout 1"/>
-        <button onclick="addToCart()">Add to Cart</button>
-      </div>
-    </section>
-
-    <div>
-      <button onclick="viewCart()">View Cart</button>
-      <button onclick="clearCart()">Clear Cart</button>
-      <button onclick="processOrder()">Process Order</button>
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Workout 1" />
+      <p>Workout 1 - $25</p>
+      <button class="add-to-cart" data-item-name="Workout 1" data-item-price="25">Add to Cart</button>
     </div>
+    <button id="view-cart">View Cart</button>
+    <div id="cart-contents"></div>
+    <button id="clear-cart">Clear Cart</button>
+    <button id="process-order">Process Order</button>
   </main>
+  <footer>
+    <p>&copy; 2025 M&J Fitness Studio</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
